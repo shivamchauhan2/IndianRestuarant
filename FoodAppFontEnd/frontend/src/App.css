@@ -1,0 +1,24 @@
+.section::before{
+  position: absolute;
+  content: " ";
+  background:black;
+  opacity: 0.24;
+  inset: 0;
+  z-index: -10;
+  border-radius: 6px;
+}
+
+.heading{
+  animation:example 3s ease-in-out 2s infinite alternate;
+}
+@keyframes example {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
